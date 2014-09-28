@@ -1,0 +1,9 @@
+observation and conclusion:
+
+	if we pre-process the list of quotes prior to searching then the execution time will be less.
+
+	if we dont preprocess the list of quotes prior to searching then the execution time will be more.
+
+
+
+
