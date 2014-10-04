@@ -1,6 +1,6 @@
 from datetime import datetime
-
-def search(dic):
+import shelve
+def search(d):
 	query=input("query:")
 	dt1= datetime.now()
 	listquery=query.split(" ")
@@ -19,7 +19,7 @@ def search(dic):
 		searchkeys.remove('and');
 		
 	result=set();
-
+	dic = shelve.open(d);
 	if(((orcount>=1) and (andcount>=1)) or (andcount>=1) or ((orcount==0) and (andcount==0))):
 		for k in searchkeys:
 			if k in dic.keys():
@@ -40,10 +40,7 @@ def search(dic):
 					result=result|temp;
 			else:
 				print("keyword not found");
-	"""for i,quote in enumerate(data_list):
-		for j in result:
-			if(i==j):
-				print("Found at ",i ,quote[:150], "...");"""
+	
 	print(result);
 	dt2= datetime.now()
 	print("Execution time:", dt2.microsecond-dt1.microsecond)

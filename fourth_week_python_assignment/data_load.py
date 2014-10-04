@@ -98,7 +98,8 @@ def get_traversal_data():
 				dirfileinfo.append(temp);
 				f.close()
 	#print(dirfileinfo);
-	output_file="raw_data.pickle"
+	output_file="raw_data.txt"
 	out=open(output_file,"wb")
 	pickle.dump(dirfileinfo,out)
 	out.close()
+	
