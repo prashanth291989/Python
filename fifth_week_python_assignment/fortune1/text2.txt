@@ -1,0 +1,1 @@
+This tutorial has been designed for software programmers with a need to understand the Python programming language starting from scratch. This tutorial will give you enough understanding on Python programming language from where you can take yourself to a higher level of expertise
